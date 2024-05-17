@@ -1,31 +1,37 @@
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Button, Container, Stack, colors } from "@mui/material";
 import Divider from "../../components/divider";
 
 
-export default function Statistics () {
+export default function Welcome () {
     return (
         <div className={"static-frame"} >
-            <Container>
+            <Container >
+                {/* add classname */}
                 <Stack className={"info"}>
-                    <Stack className={"static-box"}>
-                        <Box className={"static-num"}>12</Box>
-                        <Box className={"static-text"}>Restaurants</Box>
-                    </Stack>
-                 <Divider  height="64" width="2" bg="#E3C08D"/>
-                   <Stack className={"static-box"}>
-                        <Box className={"static-num"}>8</Box>
-                        <Box className={"static-text"}>Experience</Box>
-                    </Stack>
-                    <Divider  height="64" width="2" bg="#E3C08D"/>
-                    <Stack className={"static-box"}>
-                        <Box className={"static-num"}>50+</Box>
-                        <Box className={"static-text"}>Menu</Box>
-                    </Stack>
-                       <Divider  height="64" width="2" bg="#E3C08D"/>
-                    <Stack className={"static-box"}>
-                        <Box className={"static-num"}>200+</Box>
-                        <Box className={"static-text"}>Clients</Box>
-                    </Stack>
+              
+               <Stack className="img-info">
+                <Box className={"food-img"}>
+                    <img src="/img/food-ab.png" alt="" />
+                </Box>
+                </Stack> 
+                {/* add clasName */}                  
+                  <Stack className="food-info">
+                  <Box className="food-info-prg">
+                    <p>
+                    Welcome to  <span> delizioso</span>
+                    </p>
+                   </Box>
+                   <Box className="food-info-txt">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam 
+                    </p>
+                   </Box>
+                   <Box>
+                    <Button className="food-info-btn">
+                        See our menu
+                    </Button>
+                   </Box>
+                  </Stack>
                 </Stack>
             </Container>
         </div>

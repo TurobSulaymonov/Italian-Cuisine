@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Button, Container, Stack } from "@mui/material";
 import {CssVarsProvider} from "@mui/joy/styles"
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
@@ -8,9 +8,10 @@ import Typography from '@mui/joy/Typography';
 import  CardOverflow  from "@mui/joy/CardOverflow";
 import  VisibilityIcon from "@mui/icons-material/Visibility";
 import  DescriptionOutlinedIcon  from "@mui/icons-material/DescriptionOutlined";
+import Rating from '@mui/material/Rating';
 
-import {  useSelector } from "react-redux";
-import { createSelector } from "reselect";
+
+
 
 
 
@@ -20,82 +21,63 @@ import { createSelector } from "reselect";
 
 export default function PopularDishes() {
 
+    const [value, setValue] = React.useState(2);
    
     return (
         <div className="popular-dishes-frame">
             <Container>
                <Stack className="popular-section">
-                <Box className="category-title">Popular Dishes</Box> 
-                <Stack className="cards-frame">
-                     
-                            
-                           return(
-                             <CssVarsProvider >
-                                <Card className="card">
-                                    <CardCover>
-                                        <img src="" alt="" />
-                                    </CardCover>
-                                    <CardCover className={"card-cover"} />
-                                    <CardContent sx={{justifyContent: "flex-end"}}>
-                                        <Stack
-                                        flexDirection={"row"}
-                                        justifyContent={"space-between"}
-                                        >
-                                            <Typography
-                                            level="h2"
-                                            fontSize="lg"
-                                            textColor="#fff"
-                                            mb={1}
-                                            >
-                                               
-                                            </Typography>
-                                            <Typography
-                                            sx={{
-                                              fontWeight: "md",
-                                              color: "neutral.300",
-                                              alignItems: "center",
-                                              display: "flex",
-                                            }}>
-                                                
-                                              <VisibilityIcon 
-                                              sx= {{
-                                                fontSize: "25", marginLeft: "5px"
-                                              }}
-                                               />
-                                            </Typography>
-                                        </Stack>
-
-                                    </CardContent>
-                                    <CardOverflow
-                                    sx={{
-                                        display: "flex",
-                                        gap: 1.5,
-                                        py: 1.5,
-                                        px: "var(--Card-padding)",
-                                        borderTop: "1px solid",
-                                        height: "60px", 
-                                    }}
-                                    >
-                                     <Typography
-                                     startDecorator= {<DescriptionOutlinedIcon />}
-                                     textColor="neutral.300">
-                                     
-                                    </Typography>
-                                    </CardOverflow>
-                                    
-                                </Card>
-                             </CssVarsProvider>
-                           );
+                <Box className="category-title">Our popular menu</Box> 
+                <Stack className="category">
+                    <Stack className="btn-item">
+                        <Button>All category</Button>
+                    </Stack>
+                    <Stack>
+                        <Button>Dinner</Button>
+                    </Stack>
+                     <Stack>
+                        <Button>Lunch</Button>
+                    </Stack>
+                    <Stack>
+                        <Button>Dessert</Button>
+                    </Stack>
+                    <Stack>
+                        <Button>Drink</Button>
+                    </Stack>
+                </Stack>
+              <Stack className={"dish-menu"}>
+              <Stack className="dish-card">
+                 <Box className="dish-img">
+                    <img src="/img/kis-ita.png"/>
+                  </Box>
+                  <Box className="dish-name">
+                      Spagheetti
+                  </Box>
+                  <Box className="dish-ratng" 
+                    sx={{
+                        '& > legend': { mt: 2 },
+                      }}>
+                          <Typography component="legend"></Typography>
+                           <Rating
+                            name="simple-controlled"
+                            value={value}
+                            />
                       
-                        (
-                            <Box className ="no-data">
-                                New products are not available!
-                            </Box>
-                        )
-                    
-                   
-               
-                    </Stack> 
+                     </Box>
+                     <Box className="dish-text">
+                      <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. 
+                      </p>
+                    </Box>
+                    <Box className="dish-price">
+                        <span>
+                            $12.05
+                        </span>
+                        <Button className="btn">Order now</Button>
+                    </Box>
+
+              </Stack>
+              </Stack>
                </Stack> 
             </Container>
         </div>
