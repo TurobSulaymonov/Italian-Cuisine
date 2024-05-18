@@ -32,32 +32,32 @@ export default function HomeNavbar () {
                      >Home</NavLink>
                  </Box>
                  <Box className={"hover-line"}>
-                    <NavLink to="/products"
+                    <NavLink to="/menu"
                      activeClassName={"underline"}
                     >Menu</NavLink>
                  </Box>
                 
                     <Box className={"hover-line"}>
-                    <NavLink to="/orders"
+                    <NavLink to="/about"
                      activeClassName={"underline"}
                     >About Us</NavLink>
                  </Box> 
                 
                   
                     <Box className={"hover-line"}>
-                    <NavLink to="/member-page"
+                    <NavLink to="/online"
                      activeClassName={"underline"}
                     >Order Online</NavLink>
                  </Box> 
                 
                  <Box className={"hover-line"}>
-                    <NavLink to="/help"
+                    <NavLink to="/contact"
                      activeClassName={"underline"}
                     >Contact Us</NavLink>
                  </Box>
 
                  <Box className={"hover-line"}>
-                    <NavLink to="/help"
+                    <NavLink to="/user"
                      activeClassName={"underline"}
                     >My Page</NavLink>
                  </Box>

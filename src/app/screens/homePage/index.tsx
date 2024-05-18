@@ -6,6 +6,8 @@ import "../../../css/home.css";
 import Welcome from "./Statistics";
 import Table from "./NewDishes";
 import { TopChef } from "./TopChef";
+import { CustomerPage } from "./CustomerPage";
+import { Contact } from "./Contact";
 /* REDUX SLICE & SELECTOR */
 
 
@@ -18,8 +20,8 @@ export default function HomePage() {
       <PopularDishes />
       <Table/>
       <TopChef/>
-      
-      <ActiveUsers />
+      <CustomerPage/>
+       <Contact/>
      
     </div>;
   }

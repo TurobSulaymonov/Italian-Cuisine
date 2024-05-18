@@ -11,7 +11,7 @@ export default function Welcome () {
               
                <Stack className="img-info">
                 <Box className={"food-img"}>
-                    <img src="/img/food-ab.png" alt="" />
+                    <img src="/img/osh-sofi.jpg" alt="" />
                 </Box>
                 </Stack> 
                 {/* add clasName */}                  

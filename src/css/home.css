@@ -21,13 +21,14 @@
 }
 
 .homepage .static-frame  .info .img-info {
-    width: 706px;
+    margin-top: 10%;
+    width: 700px;
     height: 600px;
     display: flex;
-    transform: rotate(-40deg);
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    overflow: hidden;
 }
 
 .homepage .static-frame .food-info {
@@ -41,7 +42,7 @@
 .homepage .static-frame .food-info .food-info-prg{
   width: 408px;
   height: 176px;
- margin-top: -50%;
+
 
 }
 .homepage .static-frame .food-info .food-info-prg p {
@@ -293,14 +294,15 @@
     margin-top: 5%; 
     width: 100%;
     height: auto;
-    
     display: flex;
     position: relative;
+    flex-direction: column;
     align-items: center;
   
 }
 
 .homepage .chef-page .category-title {
+  margin-left: 20%; 
   width: 640px;
   height: 160px;
   font-weight: 700;
@@ -308,199 +310,240 @@
   line-height: 80px;
   text-align: center;
 }
+.homepage .chef-page .row{
+  margin-top: 5%;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  
+  flex-direction: row;
+}
 
+.homepage .chef-page .row .campus-col{
+  flex-basis: 33%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
 
-
-
-/** EVENTS **/
-
-/** EVENTS **/
-
-.homepage .events-frame {
+}
+.homepage .chef-page .row .campus-col img{
+  width: 344px;
+  height: 549px;
+  display: flex;
+  flex-direction: row;
+  }
+  .homepage .chef-page .row  .layer{
+      background: transparent;
+      height: 100%;
+      width: 344px;
+      border-radius: 10px;
+      position: absolute;
+      top:0;
+      left:0;
+      transition: 0.5s;
+  }
+  .homepage .chef-page .row  .layer:hover{
+      background: rgb(238, 232, 172)
+  }
+  .homepage .chef-page .row  .layer h3 {
+      width: 100%;
+      font-weight: 500;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+  
+  }
+  .homepage .chef-page .row  .layer p{
     width: 100%;
-    height: 745px;
-    background: #f8f8ff;
-    display: flex;
-  }
-  
-  .homepage .events-frame .category-title {
-    font-family: "Dancing Script";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-    padding-top: 20px;
-  }
-  
-  .homepage .events-frame .events-main {
-    position: relative;
-    width: 100% ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .homepage .events-frame .events-main .events-text {
-    width: auto;
-    height: 70px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .homepage .events-frame .events-main .prev-next-frame {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    margin: 40px 0 40px 0;
-    height: 25px;
-  }
-  
-  .homepage .events-frame .dot-frame-pagination {
-    position: relative;
-    width: auto;
-    display: flex;
-  }
-  
-  .homepage .events-frame .events-main .events-info {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .homepage .events-frame .events-info .events-info-frame {
-    position: relative;
-    width: 500px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .homepage .events-frame .events-img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 10px;
-    background-size: cover;
-  }
-  
-  .homepage .events-frame .events-desc {
+    font-weight: 300;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
     position: absolute;
-    margin-bottom: 7px;
-    padding: 10px;
-    display: flex;
-    width: 90%;
-    height: auto;
-    bottom: 5px;
-    background: #f8f8ff;
-    box-shadow: 0px 40px 30px rgba(25, 25, 46, 0.04);
-    border-radius: 8px;
+    opacity: 0;
+    transition: 0.5s;
   }
-  
-  .homepage .events-frame .events-desc .events-bott {
-    width: 97%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .homepage .chef-page .row .layer:hover h3{
+      bottom: 49%;
+      opacity: 1;
   }
-  
-  .homepage .events-frame .events-desc .events-bott .bott-left {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .homepage .events-frame .bott-left .event-title-speaker {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .homepage .events-frame .event-title-speaker .event-organizator {
-    display: flex;
-    align-items: center;
-  }
-  
-  .homepage .events-frame .event-title-speaker .event-organizator img {
-    width: 20px;
-    margin-right: 10px;
-  }
-  
-  .homepage .events-frame .event-organizator .spec-text-author {
-    font-family: "GT Walsheim Pro";
-    font-style: normal;
-    line-height: 34px;
-    color: #140342;
-  }
-  
-  .homepage .events-frame .bott-left .text-desc {
-    margin-top: 10px;
-    font-family: "GT Walsheim Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
-    color: #4f547b;
-  }
-  
-  .homepage .events-frame .bott-left .bott-info {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    width: 100%;
-    height: 16px;
-  }
-  
-  .homepage .events-frame .bott-info .bott-info-main {
-    margin-left: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: auto;
-    height: 100%;
-    font-family: "GT Walsheim Pro";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #4f547b;
-  }
-  
-  .homepage .events-frame .bott-info .bott-info-main img {
-    margin-right: 10px;
-  }
-  
-  .homepage .events-frame .swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .homepage .events-frame .swiper-pagination-bullet {
-    margin-right: 5px;
-    width: 8px;
-    height: 8px;
-    text-align: center;
+  .homepage .chef-page .row .layer:hover p{
+    bottom: 40%;
     opacity: 1;
-    background: #f8f8ff;
-    border-radius: 50%;
-  }
-  
-  .homepage .events-frame .swiper-pagination-bullet-active {
-    background: #343434;
-    border-radius: 50%;
-  }
-  
+}
+.homepage .chef-page Button {
+  width: 230px;
+  height: 50px;
+  border-radius: 20px;
 
+  margin-left: 40%;
+  background-color: #FF8A00;
+  color: #f8f8ff;
+}
+
+/* finish topChef style */
+
+/* CUStOMER PAGE */
+.customer-frame .customer-title {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1300px;
   
+position: relative;
+}
+.customer-frame .customer-title .green-circle {
+  content:  "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #8ee9ae;
+  right: 14%;
+  top: 10%;
+}
+.customer-frame .customer-title .blue-circle {
+  content:  "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(135, 135, 245);
+  left:20%;
+  top: 3%;
+}
+.customer-frame .customer-title .pink-circle {
+  content:  "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: violet;
+  left:30%;
+  bottom: 20%;
+}
+.customer-frame .customer-title .red-circle {
+  content:  "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(190, 69, 69);
+  right:40%;
+  bottom: 20%;
+}
+.customer-frame .customer-title .khaki-circle {
+  content:  "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: khaki;
+  left:30%;
+  bottom: 3%;
+}
+.customer-frame .customer-title .category-title{
+  width: 100%;
+  height: 160px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+}
+.customer-frame  .team-profile {
+  text-align: center;
+  margin-top: 20px;
+}
+ 
+.customer-frame .member {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+.customer-frame .featured img, .member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid orange;
+}
+
+.customer-frame .featured h2, .member h3 {
+  color: #333;
+  margin: 8px 0;
+}
+
+.customer-frame .featured p, .member p {
+  color: #666;
+  font-size: 14px;
+}
+
+.customer-frame h1 {
+  width: 524px;
+  height: 112px;
+  font-style: italic;
+  color: #555;
+  font-size: 25px;
+  font-weight: 500;
+  border-left: 3px solid orange;
+  padding-left: 10px;
+  margin: 10px 0;
+} 
+
+/* Contact */
+.contact-page{
+  margin-top: 20px;
+  margin:100px auto;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('/public/img/back_img.jpg');
+  width: 70%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
+.contact-page .container {
+  margin-top: 10px;
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: darkorange;
+}

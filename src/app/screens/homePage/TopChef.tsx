@@ -10,24 +10,45 @@ export function TopChef() {
             Our greatest chef
         </Box>
         <Stack className="chef-detail">
-            <Stack className="chef-about">
-                <Box className="chef-img">
-                   <img src="/img/chef-img_1.png" alt="" />
-                </Box>
-                <Box className="chef-name">
-                    Betron Kamor
-                </Box>
-                <Box className="chef-job">
-                  Head Chef
-                </Box>
+            <Stack className="row">
+            <div className="campus-col">
+            <img src="/img/chef-img_1.png"/>
+            <div className="layer">
+                <h3>Betron Komar</h3>
+                <p>Head chef</p>
+            
+            </div>
+        </div>
+
+        <div className="campus-col">
+            <img src="/img/chef-img_2.png"/>
+            <div className="layer">
+                <h3>Ferry Suawi</h3>
+                <p>Chef</p>
+            
+            </div>
+        </div>
+     
+        <div className="campus-col">
+            <img src="/img/chef-img_1.png"/>
+            <div className="layer">
+                <h3>Iswan Dracho</h3>
+                <p>Chef</p>
+
+                
+             </div>
+        </div>
 
             </Stack>
+
+          
+
+           
 
 
         </Stack>
          <Stack className="chef-btn">
-
-       <Button>Views</Button>
+             <Button>Views All</Button>
          </Stack>
        </Stack>
       </Container>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link, Route, Switch, useLocation } from "react-router-dom";
 import { UserPage} from "./screens/userPage";
-import ProductsPage from "./screens/productsPage";
+import MenuPage from "./screens/menuPage";
 import OrdersPage from "./screens/ordersPage";
 import HomePage from "./screens/homePage";
 import HomeNavbar from "./components/headers/HomeNavbar";
@@ -12,6 +12,8 @@ import HelpPage from "./screens/helpPage";
 import "../css/app.css";
 import "../css/navbar.css";
 import "../css/footer.css"
+import { About } from "./screens/aboutPage/about";
+
 
 
 
@@ -24,11 +26,11 @@ function App() {
       
       {location.pathname === "/" ? <HomeNavbar/> : < OtherNavbar /> }
         <Switch>
-          <Route path="/products">
-            <ProductsPage  />
+          <Route path="/menu">
+            <MenuPage  />
           </Route>
-          <Route path="/orders">
-        <OrdersPage />
+          <Route path="/about">
+        <About/>
          </Route>
          <Route path="/member-page">
         <UserPage />

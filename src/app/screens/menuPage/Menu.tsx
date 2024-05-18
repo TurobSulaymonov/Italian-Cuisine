@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
 
-export function ProductsPage() {
+export function MenuPage() {
   return <Container>Products</Container>
 }

@@ -19,12 +19,10 @@ export default function Footer() {
         <Stack flexDirection={"row"} sx={{ mt: "94px" }}>
           <Stack flexDirection={"column"} style={{ width: "340px" }}>
             <Box>
-              <img width={"100px"} src={"/icons/burak.svg"} />
+              <img width={"100px"} src={"/icons/logo-del.png"} />
             </Box>
             <Box className={"foot-desc-txt"}>
-              Focusing on the gourmet Turkish breakfast as well as the youth
-              society, CZN Burak Gurme aims to bring Turkish cuisine back. CZN
-              Burak Gurme creates an illusion with its cuisine.
+            Viverra gravida morbi egestas facilisis tortor netus non duis tempor. 
             </Box>
             <Box className="sns-context">
               <img src={"/icons/facebook.svg"} />
@@ -36,11 +34,13 @@ export default function Footer() {
           <Stack sx={{ ml: "288px" }} flexDirection={"row"}>
             <Stack>
               <Box>
-                <Box className={"foot-category-title"}>Bo'limlar</Box>
+                <Box className={"foot-category-title"}>Page</Box>
                 <Box className={"foot-category-link"}>
                   <Link to="/">Home</Link>
-                  <Link to="/products">Products</Link>
-                  {authMember && <Link to="/orders">Orders</Link>}
+                  <Link to="/products">Menu</Link>
+                  <Link to="/products">Order online</Link>
+                  <Link to="/products">Catering</Link>
+                  {authMember && <Link to="/orders">Reservation</Link>}
                   <Link to="/help">Help</Link>
                 </Box>
               </Box>
@@ -64,7 +64,7 @@ export default function Footer() {
                   </Box>
                   <Box className={"find-us"}>
                     <span>E.</span>
-                    <div>devexuz@gmail.com</div>
+                    <div>turobsulaymonov117@gmail.com</div>
                   </Box>
                   <Box className={"find-us"}>
                     <span>H.</span>
