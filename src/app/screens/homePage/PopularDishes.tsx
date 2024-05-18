@@ -45,13 +45,17 @@ export default function PopularDishes() {
                         <Button>Drink</Button>
                     </Stack>
                 </Stack>
+                <Stack className="card-category-title"
+                flexDirection={"row"}>
               <Stack className={"dish-menu"}>
+     
+            
               <Stack className="dish-card">
                  <Box className="dish-img">
                     <img src="/img/kis-ita.png"/>
                   </Box>
                   <Box className="dish-name">
-                      Spagheetti
+                      Spaghetti
                   </Box>
                   <Box className="dish-ratng" 
                     sx={{
@@ -76,6 +80,41 @@ export default function PopularDishes() {
                         <Button className="btn">Order now</Button>
                     </Box>
 
+              </Stack>
+            
+          
+             
+              <Stack className="dish-card">
+                 <Box className="dish-img">
+                    <img src="/img/kis-ita.png"/>
+                  </Box>
+                  <Box className="dish-name">
+                      Spaghetti
+                  </Box>
+                  <Box className="dish-ratng" 
+                    sx={{
+                        '& > legend': { mt: 2 },
+                      }}>
+                          <Typography component="legend"></Typography>
+                           <Rating
+                            name="simple-controlled"
+                            value={value}
+                            />
+                      
+                     </Box>
+                     <Box className="dish-text">
+                      <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. 
+                      </p>
+                    </Box>
+                    <Box className="dish-price">
+                        <span>
+                            $12.05
+                        </span>
+                        <Button className="btn">Order now</Button>
+                    </Box>
+
+              </Stack>
               </Stack>
               </Stack>
                </Stack> 

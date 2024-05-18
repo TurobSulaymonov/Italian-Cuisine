@@ -89,7 +89,7 @@
 }
 
 .homepage .popular-dishes-frame .popular-section{
-  margin-top: 45px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,42 +98,84 @@
   margin-top: 20px;
  display: flex;
  flex-direction: row;
- justify-content: center;
+ justify-content: space-between;
  align-items: center;
  gap: 25px;
  width: 900px;
- height: 50px;
+ height: 60px;
  word-spacing: 10px;
- background: #e3c08d;
+
+
+}
+.homepage  .card-category-title {
+    margin-top: 39px;
+    width: 100%;
+    height: 700px;
+ 
+    
 
 }
 .homepage .popular-dishes-frame .dish-menu .dish-card {
-    margin-top: 50px;
-    width: 344px;
-    height: auto;
-    display: flex;
-    border: 2px solid khaki;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 344px;
+  height: 637px;
+}
+.homepage .popular-dishes-frame .dish-menu .dish-card .dish-img{
+  margin-top: 10px;
+  width: 260px;
+  height: 260px;
+  border-radius: 12px;
+
 
 }
+.homepage .popular-dishes-frame .dish-menu .dish-card .dish-name{
+  margin-top: 10px;
+  width: 150px;
+ height: 60px;
+ font-size: 30px;
+ font-weight: 600;
+ line-height: 60px;
+ text-align: center;
+}
+.homepage .popular-dishes-frame .dish-menu .dish-card .dish-text{
+  margin-top: 10px;
+  width: 280px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+.homepage .popular-dishes-frame .dish-menu .dish-card .dish-price{
+  margin-top: 60px;
+  width: 271px;
+  height: 55px;
+  display: inline-block;
+  
+  gap: 30px;
 
-.homepage .popular-dishes-frame .cards-frame .card {
-    min-height: 439px;
-    min-width: 300px;
-    cursor: pointer;
 }
-.homepage .popular-dishes-frame .cards-frame .card .card-cover {
-  background: linear-gradient(
-    to top, 
-    rgba(0, 0, 0, 0.4),
-     rgba(0, 0, 0, 0) 200px
-  ),
- linear-gradient( to top, 
- rgba(0, 0, 0, 0.8),
-  rgba(0, 0, 0, 0) 300px);
+.homepage .popular-dishes-frame .dish-menu .dish-card .dish-price span{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 75px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+
 }
+.homepage .popular-dishes-frame .dish-menu .dish-card .dish-price .btn{
+  margin-top: -10px;
+  margin-left: 25px;
+  width: 158px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ff9200;
+}
+
 
 /* .homepage .popular-dishes-frame .no-data {
     width:100%;
@@ -150,204 +192,125 @@
     color: #e3c08d;
 }
  */
-/** NEW PRODUCTS **/
+/** TAB PRODUCTS **/
 
-.homepage .new-products-frame {
+.homepage .tab-products-frame {
+    margin-top: 27%; 
     width: 100%;
-    height: 605px;
+    height: 100vh;
+    background: #FFF4E7;
+    display: flex;
+    position: relative;
+    align-items: center;
   
 }
-.homepage .main{
+.homepage .tab-products-frame .table-info {
     margin-top: 45px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.homepage .new-products-frame .category-title {
-    font-family: "Dancing Script";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-}
-
-.homepage .new-products-frame .main .cards-frame {
-    width: 100%;
-    margin: 47px 2px 2px 2px;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
+}
+.homepage .tab-products-frame .table-info .table-img-info {
+  width: 650px;
+  height: 850px;
 }
 
-.homepage .new-products-frame .main .card {
-    height: 335px;
-    width: 290px;
-    cursor: pointer;
+
+
+.homepage .tab-products-frame .table-info .table-img-info .tab-food-img_1 {
+  width: 181px;
+  height: 181px;
+  position: absolute;
+  left: 40%;
+}
+.homepage .tab-products-frame .table-info .table-img-info .tab-food-img_2 {
+  width: 450px;
+  height: 450px;
 }
 
-.homepage .new-products-frame .product-sale{
-    position: absolute;
-    margin-top: 10px;
-    z-index: 100;
-    width: 90px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ff9200;
-    box-shadow: 4px 6px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 21px;
-    color: #f8f8ff;
+.homepage .tab-products-frame .table-info .table-img-info .tab-food-img_3 {
+  width: 181px;
+  height: 181px;
+  position: absolute;
+  bottom: -6%;
+
+  
 }
- .homepage .new-products-frame .product-detail {
-    width: auto;
-    height: 49%;
-    display: flex;
-    justify-content: center;
-    margin-top: -12px;
-    border-top: 1px solid;
-     border-color: #f8f8ff;
-     background-color: #fafbfb;
+
+.homepage .tab-products-frame .table-info .tab-text-info{
+  margin-top: 15%;
+  margin-left: 12%;
+  width: 500px;
+  height: 600px;
+  position: relative
 }
-.homepage .new-products-frame .product-detail .info {
+.homepage .tab-products-frame .food-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 408px; 
+  height: 600px;
+}
+
+.homepage .tab-products-frame .food-info-prg{
+  width: 408px;
+  height: 176px;
+ margin-top: -50%;
+
+}
+.homepage  .tab-products-frame .food-info-prg p {
+  font-size: 80px;
+  font-family: "Tinos";
+  font-weight: 700;
+  line-height: 80px;
+}
+.homepage .tab-products-frame .food-info-prg span{
+  color:#FF8A00;
+}
+.homepage .tab-products-frame  .food-info-txt{
+  width: 430px;
+  height: 160px;
+  margin-top: 13%; 
+  margin-left: 2px;
+}
+.homepage .tab-products-frame .food-info-txt p{
+ font-size: 20px;
+ font-weight: 400;
+ line-height: 40px;
+}
+.homepage .tab-products-frame .food-info-btn{
+  width: 230px;
+  height: 50px;
+  border-radius: 12px;
+  margin-top: 30%;
+  background-color: #FF8A00;
+  color: #f8f8ff;
+}
+   /** TopCHef **/ 
+
+   .homepage .chef-page {
+    margin-top: 5%; 
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.homepage .new-products-frame .product-detail .title {
-    width: 65px;
-    font-weight: 500;
-}
-.homepage .new-products-frame .product-detail .price{
-    margin-left: 10px;
-    width: 20px;
-    font-weight: 500;
-}
-
-.homepage .new-products-frame .product-detail .divider {
-    margin: 0 10px 0 10px;
-    width: 2px;
-    background-color: #d9d9d9;
-}
-.homepage .new-products-frame .product-detail .views {
-    display: flex;
-    align-items: center;
-    font-family: 500;
-}
-
-.homepage .new-products-frame .no-data {
-    width:100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    text-transform: capitalize;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 30px;
-    line-height: 34px;
-    color: #e3c08d;
-}
-
-/** ADVERTISEMENT **/
-
-.homepage .ads-restaurant-frame {
-    width: 100%;
-    height: 693px;
-    display: flex;
-    overflow: hidden;
-    transform: perspective(0px);
-    box-shadow: -3px 0px 20px 14px #34343480;
-}
-
-.homepage .ads-restaurant-frame .ads-video {
-    width: 100%;
-    background: #0c0e12;
-    display: flex;
-    box-shadow: 0px -8px 90px rgb(215 215 215);
-    transform: scale(1.5);
-    overflow: hidden;
-}
-/** ACTIVE USERS **/
-
-.homepage .active-users-frame {
-    width: 100%;
-    height: 550px;
-    background: #f8f8ff;
+    height: auto;
     
-}
-
-.homepage .active-users-frame .main {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
     align-items: center;
+  
 }
-.homepage .active-users-frame .category-title {
-    font-family: "Dancing Script";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
 
+.homepage .chef-page .category-title {
+  width: 640px;
+  height: 160px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
 }
-.homepage .cards-frame {
-    width: auto;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
-}
-.homepage .cards-frame .card {
-   
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid;
-    border-color: #f8f8ff;
-    background-color: #fafbfb;
-    gap: 10px;
-    margin-top: 30px;
-   
 
-}
-.homepage .cards-frame .card .user-size{
-    height: 273px;
-    width: 305px;
-    margin-top: 43px;
-    margin: 0.3px;
 
-}
-.homepage .cards-frame .card .member-nickname{
-    width: 65px;
-    font-weight: 500; 
-    font-size: 20px;
-    margin-left: 36%;
-   
-} 
 
-.homepage .cards-frame .no-data{
-    width:100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    text-transform: capitalize;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 30px;
-    line-height: 34px;
-    color: #e3c08d;
-}
 
 /** EVENTS **/
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Button, Container, Stack } from "@mui/material";
 import  AspectRatio  from "@mui/joy/AspectRatio";
 import Card from '@mui/joy/Card';
 import  CardOverflow  from "@mui/joy/CardOverflow";
@@ -15,58 +15,52 @@ import Divider from "../../components/divider"
     // REDUX SLICE & SELECTOR 
  
     
-export default function NewDishes() {
+export default function Table() {
    
 
     return (
-        <div className={"new-products-frame"}>
+        <div className={"tab-products-frame"}>
             <Container>
-                <Stack className={"main"}>
-                    <Box className={"category-title"}>
-                        Fresh Menu
-                    </Box>
-                    <Stack className={"cards-frame"}>
-                        <CssVarsProvider>
-                           
-                            
-                                    <Card  variant="outlined" className={"card"}>
-                                        <CardOverflow>
-                                            <div className="product-sale"></div>
-                                            <AspectRatio ratio="1">
-                                            <img src="" alt="" />
-                                            </AspectRatio>
-                                        </CardOverflow>
-                                        <CardOverflow variant="soft" className={"product-detail"}>
-                                            <Stack className="info"> 
-                                            <Stack flexDirection={"row"}>
-                                                <Typography className={"title"}>
-                                                   
-                                                </Typography>
-                                                <Divider width="2" height="24" bg="#d9d9d9"/>
-                                                <Typography className={"price"}>
-                                                   
-                                                </Typography>
-                                                </Stack>
-                                                <Stack >
-                                                    <Typography className={"views"}>
-                                                    
-                                                        <VisibilityIcon
-                                                        sx={{fontSize: 20, marginLeft: "5px" }} 
-                                                        />
-                                                    </Typography>
-                                                </Stack>
-                                            </Stack>
-                                        </CardOverflow>
-                                    </Card>
-                          
-                                <Box className ="no-data">
-                                    New products are not available!
-                                </Box>
-                        
-                        </CssVarsProvider>
-                    </Stack>
-                </Stack>
-            </Container>
+            <Stack className={"table-info"}>
+              
+                 <Stack className="tab-info-img">
+
+                 <Stack className="table-img-info">
+              <Box className={"tab-food-img_1"}>
+                   <img src="/img/small_1-img.png" alt="" />
+               </Box>
+               <Box className={"tab-food-img_2"}>
+                   <img src="/img/table-img.png" alt="" />
+               </Box>
+               <Box className={"tab-food-img_3"}>
+                   <img src="/img/small-img.png" alt="" />
+               </Box>
+               </Stack> 
+
+                 </Stack>
+               {/* add clasName */}                  
+               <Stack className="tab-text-info">
+               <Stack className="food-info">
+                 <Box className="food-info-prg">
+                   <p>
+                   Let's resrve <span>a table</span>
+                   </p>
+                  </Box>
+                  <Box className="food-info-txt">
+                   <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam 
+                   </p>
+                  </Box>
+                  <Box>
+                   <Button className="food-info-btn">
+                       See our menu
+                   </Button>
+                  </Box>
+                 </Stack>
+               </Stack>
+               </Stack>
+           </Container>
+           
             
         </div>
     );
