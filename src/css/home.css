@@ -21,7 +21,7 @@
 }
 
 .homepage .static-frame  .info .img-info {
-    margin-top: 10%;
+    
     width: 700px;
     height: 600px;
     display: flex;
@@ -90,13 +90,13 @@
 }
 
 .homepage .popular-dishes-frame .popular-section{
-  margin-top: 30px;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .homepage .popular-dishes-frame .popular-section .category{
-  margin-top: 20px;
+  
  display: flex;
  flex-direction: row;
  justify-content: space-between;
@@ -196,7 +196,6 @@
 /** TAB PRODUCTS **/
 
 .homepage .tab-products-frame {
-    margin-top: 27%; 
     width: 100%;
     height: 100vh;
     background: #FFF4E7;

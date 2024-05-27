@@ -47,75 +47,139 @@ export default function PopularDishes() {
                 </Stack>
                 <Stack className="card-category-title"
                 flexDirection={"row"}>
-              <Stack className={"dish-menu"}>
-     
-            
-              <Stack className="dish-card">
-                 <Box className="dish-img">
-                    <img src="/img/kis-ita.png"/>
-                  </Box>
-                  <Box className="dish-name">
-                      Spaghetti
-                  </Box>
-                  <Box className="dish-ratng" 
-                    sx={{
-                        '& > legend': { mt: 2 },
-                      }}>
-                          <Typography component="legend"></Typography>
-                           <Rating
-                            name="simple-controlled"
-                            value={value}
-                            />
-                      
-                     </Box>
-                     <Box className="dish-text">
-                      <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. 
-                      </p>
-                    </Box>
-                    <Box className="dish-price">
-                        <span>
-                            $12.05
-                        </span>
-                        <Button className="btn">Order now</Button>
-                    </Box>
+            <div className="menu-frame">
+   
+   
+    <div className="container">
+    
+      <div className="row">
+        {/* 1th product */}
+        <div className="col">
+          <div className="imgContainer">
+            <img src="/img/kis-ita.png" alt="image" />
+          </div>
+          <div className="title">
+            <h2>Pizza</h2>
+            <p>$120.00</p>
+          </div>
+          <div className="para">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo,
+              laudantium.
+            </p>
+          </div>
+          <div className="footer">
+            <div className="star-container">
+              <ul>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div className="button-container">
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
 
-              </Stack>
-            
-          
-             
-              <Stack className="dish-card">
-                 <Box className="dish-img">
-                    <img src="/img/kis-ita.png"/>
-                  </Box>
-                  <Box className="dish-name">
-                      Spaghetti
-                  </Box>
-                  <Box className="dish-ratng" 
-                    sx={{
-                        '& > legend': { mt: 2 },
-                      }}>
-                          <Typography component="legend"></Typography>
-                           <Rating
-                            name="simple-controlled"
-                            value={value}
-                            />
-                      
-                     </Box>
-                     <Box className="dish-text">
-                      <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. 
-                      </p>
-                    </Box>
-                    <Box className="dish-price">
-                        <span>
-                            $12.05
-                        </span>
-                        <Button className="btn">Order now</Button>
-                    </Box>
+        {/* 2th product */}
+        <div className="col">
+          <div className="imgContainer">
+            <img src="/img/osh-img.jpg" alt="image" />
+          </div>
+          <div className="title">
+            <h2>Burger</h2>
+            <p>$20.00</p>
+          </div>
+          <div className="para">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo,
+              laudantium.
+            </p>
+          </div>
+          <div className="footer">
+            <div className="star-container">
+              <ul>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div className="button-container">
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
 
-              </Stack>
-              </Stack>
+       {/* 3th product */}
+        <div className="col">
+          <div className="imgContainer">
+            <img src="/img/popular-menu.png" alt="image" />
+          </div>
+          <div className="title">
+            <h2>Pot Pie</h2>
+            <p>$19.23</p>
+          </div>
+          <div className="para">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo,
+              laudantium.
+            </p>
+          </div>
+          <div className="footer">
+            <div className="star-container">
+              <ul>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star checked"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star"></i>
+                </li>
+                <li>
+                  <i className="fa fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div className="button-container">
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+</div>
               </Stack>
                </Stack> 
             </Container>

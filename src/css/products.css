@@ -1,4 +1,8 @@
 /** PRODUCTS **/
+.menu-frame {
+width: 100%;
+height: auto;
+}
 
 *,
 *::after,
@@ -156,7 +160,6 @@ button:hover {
     width: 100%;
   }
 }
-
 /* ChosenProduct */
 .products-page .chosen-product {
     position: relative;

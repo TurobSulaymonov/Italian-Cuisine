@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 
 
-export function Contact (){
+export function Contact(){
     return <div className="contact-page">
     <div className="container">
         <div className="header">

@@ -1,7 +1,9 @@
+import { Container } from "@mui/material"
 
 
 export function Products (){
   return <div className="menu-frame">
+   
      <section>
       <div className="container">
         <div className="heading">
@@ -175,5 +177,6 @@ export function Products (){
         </div>
       </div>
     </section> 
+  
   </div>
 } 

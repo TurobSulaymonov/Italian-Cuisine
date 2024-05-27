@@ -11,6 +11,8 @@ import "../css/navbar.css";
 import "../css/footer.css"
 import { About } from "./screens/aboutPage/about";
 import ProductsPage from "./screens/productsPage";
+import { ContactPage } from "./screens/contactPage";
+
 
 
 
@@ -33,8 +35,8 @@ function App() {
          <Route path="/member-page">
         <UserPage />
          </Route>
-         <Route path="/help">
-        <HelpPage />
+        <Route path="/contact">
+        <ContactPage />
          </Route>
           <Route path="/">
             <HomePage />
