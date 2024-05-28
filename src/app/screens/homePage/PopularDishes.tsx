@@ -31,17 +31,17 @@ export default function PopularDishes() {
                 <Stack className="category">
                     <Stack className="btn-item">
                         <Button>All category</Button>
-                    </Stack>
-                    <Stack>
+                    </Stack >
+                    <Stack className="btn-item">
                         <Button>Dinner</Button>
                     </Stack>
-                     <Stack>
+                     <Stack className="btn-item">
                         <Button>Lunch</Button>
                     </Stack>
-                    <Stack>
+                    <Stack className="btn-item">
                         <Button>Dessert</Button>
                     </Stack>
-                    <Stack>
+                    <Stack className="btn-item">
                         <Button>Drink</Button>
                     </Stack>
                 </Stack>

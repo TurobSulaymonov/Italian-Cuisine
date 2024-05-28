@@ -1,4 +1,4 @@
-import { Container } from "@mui/material"
+import { Button, Container, Stack } from "@mui/material"
 
 
 export function Products (){
@@ -10,6 +10,23 @@ export function Products (){
           <span>Our customer love this</span>
           <h1>Our Products</h1>
         </div>
+        <Stack className="category">
+                    <Stack className="btn-item">
+                        <Button>All category</Button>
+                    </Stack>
+                    <Stack>
+                        <Button>Dinner</Button>
+                    </Stack>
+                     <Stack>
+                        <Button>Lunch</Button>
+                    </Stack>
+                    <Stack>
+                        <Button>Dessert</Button>
+                    </Stack>
+                    <Stack>
+                        <Button>Drink</Button>
+                    </Stack>
+                </Stack>
         <div className="row">
           {/* 1th product */}
           <div className="col">
